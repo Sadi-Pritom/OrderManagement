@@ -112,6 +112,10 @@ namespace Order
                 {
                     dataGridView1.Rows.Add(read[0],read[3], read[4], read[5],read[6]);
                 }
+                while (read.Read())
+                {
+                    dataGridView2.Rows.Add(read[0], read[1], read[2], read[3], read[4], read[5], read[6], read[7], read[8]);
+                }
                 read.Close();
                 con.Close();
             }
